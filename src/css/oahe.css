@@ -36,7 +36,8 @@ a {
 h2.timeline-head {
   background-color: var(--third-color) !important;
   color: var(--white-color) !important;
-  margin-left: 14px;
+  margin-left: 15px;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 .timeline {
   border-color: var(--third-color) !important;

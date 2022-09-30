@@ -11,7 +11,8 @@ function loadCSS(path) {
   document.getElementsByTagName("head")[0].appendChild(css);
 }
 
-loadCSS("https://kuchingneko28.github.io/oahe-extension/style.css");
+loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/oahe.css");
+// loadCSS("http://127.0.0.1:5500/src/css/oahe.css");
 
 // const header = document.querySelector(".header-content");
 

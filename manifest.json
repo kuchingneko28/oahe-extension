@@ -6,7 +6,10 @@
   "content_scripts": [
     {
       "matches": ["https://pahe.li/", "https://pahe.ph/", "https://pahe.in/", "https://pahe.li/*", "https://pahe.ph/*", "https://pahe.in/*"],
-      "js": ["app.js"]
+      "js": ["./src/js/app.js"]
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
