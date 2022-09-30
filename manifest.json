@@ -1,0 +1,12 @@
+{
+  "name": "pahe pemalas",
+  "description": "pahe pemalas  akwoakowkakw",
+  "version": "0.0.0.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://pahe.li/", "https://pahe.ph/", "https://pahe.in/", "https://pahe.li/*", "https://pahe.ph/*", "https://pahe.in/*"],
+      "js": ["app.js"]
+    }
+  ]
+}
