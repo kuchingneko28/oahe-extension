@@ -1,7 +1,5 @@
-const site = window.location.hostname;
-
 // custom background
-const url_background = "";
+const url_background = ""; // paste link di dalam ""
 
 // Load css dari file .css biar g ribet
 function loadCSS(path) {
@@ -12,7 +10,8 @@ function loadCSS(path) {
 
   document.getElementsByTagName("head")[0].appendChild(css);
 }
-loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/oahe.css");
+// loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/oahe.css");
+loadCSS("http://127.0.0.1:5500/src/css/index.css");
 const addCustomCSS = (css) => (document.head.appendChild(document.createElement("style")).innerHTML = css);
 if (url_background.length > 0) {
   addCustomCSS(`
@@ -23,7 +22,6 @@ if (url_background.length > 0) {
   `);
 }
 // Load dari localhost
-// loadCSS("http://127.0.0.1:5500/src/css/oahe.css");
 
 // css via js ribet
 
