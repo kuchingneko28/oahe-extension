@@ -26,4 +26,5 @@ body {
 .container h2 {
   font-size: 24px;
   font-weight: 500;
+  text-transform: capitalize;
 }
