@@ -24,7 +24,7 @@ body {
   padding: 25px;
 }
 .container h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }

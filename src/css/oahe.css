@@ -37,8 +37,7 @@ a {
 h2.timeline-head {
   background-color: var(--third-color) !important;
   color: var(--white-color) !important;
-  margin-left: 15px;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: var(--border-radius);
 }
 .timeline {
   border-color: var(--third-color) !important;
@@ -53,7 +52,7 @@ h2.timeline-head {
 /* Logo */
 .logo {
   /* text-align: right !important; */
-  padding-top: 40px;
+  padding-top: 60px;
 }
 .boxed-all {
   background-color: var(--second-color) !important;
@@ -71,6 +70,9 @@ h2.timeline-head {
 #text-html-widget-18 a:nth-child(2) {
   padding: 20px 70px;
   background-color: var(--white-color);
+  border-radius: var(--border-radius);
+}
+#tab3 .post-thumbnail img {
   border-radius: var(--border-radius);
 }
 
@@ -217,14 +219,15 @@ a.more-link,
   background-color: var(--third-color);
 }
 #theme-header {
+  position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  /*background-image: url("http://127.0.0.1:5500/tes.jpg");*/
+  /* background-image: url(http://127.0.0.1:5500/tes.jpg); */
   background-image: url("https://kuchingneko28.github.io/oahe-extension/tes.jpg");
   background-size: cover;
-  height: 300px;
+  height: 350px;
   border: none;
-  position: relative;
+  object-fit: cover;
 }
 #top-nav {
   background-color: transparent;
@@ -291,7 +294,7 @@ a.more-link,
   opacity: 0.3;
 }
 .header-content {
-  height: 220px;
+  height: 270px;
 }
 .cat-box .entry {
   background: var(--third-color);
@@ -338,6 +341,10 @@ code {
 }
 .box.download a:hover {
   color: #d4af37 !important;
+}
+.imdbwp.dark .imdbwp__header,
+.imdbwp.dark .imdbwp__teaser {
+  border-color: var(--third-color);
 }
 
 /* Season section */
