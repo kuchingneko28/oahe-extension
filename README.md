@@ -2,10 +2,10 @@
 Pasang custom gambar : 
 - Ke folder src -> js
 - Edit app.js 
-- Masukan link gambar di background_url
+- Masukan link gambar di url_background
 
 
 Setelah itu reload extension
 
 contoh : 
-const background_url = "https://kuchingneko28.github.io/oahe-extension/tes.jpg";
+const url_background = "https://kuchingneko28.github.io/oahe-extension/tes.jpg";
