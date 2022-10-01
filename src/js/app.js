@@ -14,13 +14,14 @@ function loadCSS(path) {
 }
 loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/oahe.css");
 const addCustomCSS = (css) => (document.head.appendChild(document.createElement("style")).innerHTML = css);
-
-addCustomCSS(`
+if (url_background.length > 0) {
+  addCustomCSS(`
   #theme-header {
     
     background-image: url(${url_background});
   }
   `);
+}
 // Load dari localhost
 // loadCSS("http://127.0.0.1:5500/src/css/oahe.css");
 
