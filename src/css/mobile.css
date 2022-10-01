@@ -23,6 +23,7 @@
   }
   #theme-header {
     height: auto;
+    overflow: hidden;
   }
   #sidebar {
     display: none;
