@@ -3,6 +3,8 @@ Pasang custom gambar :
 - Ke folder js
 - Edit app.js 
 - Masukan url di background_url
+
+
 Setelah itu reload extension
 
 contoh : 
