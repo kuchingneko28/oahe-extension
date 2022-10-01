@@ -1,6 +1,6 @@
 # oahe-extension
 Pasang custom gambar : 
-- Ke folder js
+- Ke folder src -> js
 - Edit app.js 
 - Masukan url di background_url
 
