@@ -1,5 +1,8 @@
 const site = window.location.hostname;
 
+// custom background
+const url_background = "";
+
 // Load css dari file .css biar g ribet
 function loadCSS(path) {
   let css = document.createElement("link");
@@ -9,14 +12,19 @@ function loadCSS(path) {
 
   document.getElementsByTagName("head")[0].appendChild(css);
 }
-
 loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/oahe.css");
+const addCustomCSS = (css) => (document.head.appendChild(document.createElement("style")).innerHTML = css);
 
+addCustomCSS(`
+  #theme-header {
+    
+    background-image: url(${url_background});
+  }
+  `);
 // Load dari localhost
 // loadCSS("http://127.0.0.1:5500/src/css/oahe.css");
 
 // css via js ribet
-// const addCustomCSS = (css) => (document.head.appendChild(document.createElement("style")).innerHTML = css);
 
 // tadi ny mau buat add element cuma males ribet
 // const header = document.querySelector(".header-content");
