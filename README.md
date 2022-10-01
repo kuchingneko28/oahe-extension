@@ -2,7 +2,7 @@
 Pasang custom gambar : 
 - Ke folder src -> js
 - Edit app.js 
-- Masukan url di background_url
+- Masukan link gambar di background_url
 
 
 Setelah itu reload extension
