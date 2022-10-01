@@ -10,8 +10,8 @@ function loadCSS(path) {
 
   document.getElementsByTagName("head")[0].appendChild(css);
 }
-// loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/oahe.css");
-loadCSS("http://127.0.0.1:5500/src/css/index.css");
+loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/index.css");
+// loadCSS("http://127.0.0.1:5500/src/css/index.css");
 const addCustomCSS = (css) => (document.head.appendChild(document.createElement("style")).innerHTML = css);
 if (url_background.length > 0) {
   addCustomCSS(`
