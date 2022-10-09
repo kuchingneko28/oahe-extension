@@ -1,5 +1,7 @@
 @media (max-width: 990px) {
-  body {
+  /* Grid view image center */
+  .pt-cv-ifield {
+    text-align: center;
   }
   .imdbwp.dark {
     flex-direction: column;
