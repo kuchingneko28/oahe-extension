@@ -1,4 +1,4 @@
-@media (max-width: 990px) {
+@media screen and (max-width: 900px) {
   /* Grid view image center */
   .pt-cv-ifield {
     text-align: center;
@@ -35,7 +35,7 @@
   }
   .cat-box-content ul {
     display: grid;
-    grid-template-columns: repeat(4, 85px);
+    grid-template-columns: repeat(auto-fill, 85px);
     gap: 8px;
     align-items: center;
     justify-content: center;

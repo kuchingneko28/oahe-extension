@@ -254,8 +254,8 @@ a.more-link,
 #main-nav .menu-sub-content {
   background: var(--third-color) !important;
   border-top-color: var(--main-color) !important;
-  border-radius: var(--border-radius);
-  margin: 0 5px;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  box-shadow: none;
 }
 #main-nav ul li.current-menu-parent a,
 #main-nav ul li.current-menu-parent a:hover {
@@ -298,7 +298,7 @@ a.more-link,
 }
 .cat-box .entry {
   background: var(--third-color);
-  height: 254px;
+  height: 253px;
   padding: 12px;
   border-radius: var(--border-radius);
 }
