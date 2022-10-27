@@ -1,12 +1,19 @@
 {
   "name": "oahe extension",
-  "description": "oahe pemalas akwoakwoka",
+  "description": "extension to override custom css from oahe site",
   "version": "0.0.0.1",
   "manifest_version": 3,
   "content_scripts": [
     {
       "matches": ["https://pahe.li/", "https://pahe.ph/", "https://pahe.in/", "https://pahe.li/*", "https://pahe.ph/*", "https://pahe.in/*"],
       "js": ["./src/js/app.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["/custom_background.json"],
+      "matches": ["<all_urls>"],
+      "extension_ids": []
     }
   ],
   "action": {
