@@ -1,6 +1,6 @@
 # oahe-extension
 
-Cara pasang custom gambar :
+Cara ganti wallpaper gambar :
 
 - Download extension & extract file nya
 - Edit file "background.json"
@@ -14,7 +14,7 @@ contoh ny seperti ini :
 }
 ```
 
-Kalo ingin mengganti posisi background, cara ny sama seperti di atas tinggal tambahin posisi di position dalam file backgrond.json nya
+Kalo ingin mengganti posisi gambar, cara ny sama seperti di atas tinggal tambahin posisi di position dalam file backgrond.json nya
 
 conton ny seperti ini:
 
