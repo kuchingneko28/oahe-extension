@@ -143,10 +143,13 @@ h2.timeline-head {
   box-shadow: none;
   border-radius: var(--border-radius);
 }
-.pic-box.cat-box li .post-thumbnail img.attachment-tie-small {
+.pic-box.cat-box li.first-pic .post-thumbnail,
+.pic-box.pic-grid.cat-box li .post-thumbnail {
   border-radius: var(--border-radius);
+}
+.pic-box.cat-box li .post-thumbnail img.attachment-tie-small {
   box-shadow: none;
-  object-fit: cover;
+  object-fit: contain;
 }
 .pic-box.pic-grid.cat-box li {
   width: auto;
@@ -212,6 +215,9 @@ a.more-link,
 #main-nav ul li.current-menu-item a:hover {
   background-color: transparent;
 }
+.search-block:after {
+  display: none;
+}
 .cat-box-content,
 #sidebar .widget-container,
 .post-listing,
@@ -222,10 +228,9 @@ a.more-link,
   position: relative;
   background-repeat: no-repeat;
   background-position: center center;
-  /* background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Spiderman-Wallpaper-HD-Free-download-620x349.jpg); */
   background-image: url("https://kuchingneko28.github.io/oahe-extension/tes.jpg");
   background-size: cover;
-  height: 350px;
+  height: 351px;
   border: none;
   object-fit: cover;
 }
