@@ -306,8 +306,8 @@ a.more-link,
   padding: 12px;
   border-radius: var(--border-radius);
 }
-.cat-box-content .post-thumbnail img,
-.cat-box-content .post-thumbnail a {
+.cat-box-content > .item-list .post-thumbnail img,
+.cat-box-content > .item-list .post-thumbnail a {
   border-radius: var(--border-radius) 0 0 8px;
   box-shadow: none !important;
 }
