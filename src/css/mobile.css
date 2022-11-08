@@ -26,6 +26,7 @@
   #theme-header {
     height: auto;
     overflow: hidden;
+    height: 349px;
   }
   #sidebar {
     display: none;

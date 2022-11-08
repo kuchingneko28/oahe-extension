@@ -6,13 +6,11 @@ const loadCSS = (path) => {
   css.media = "all";
   css.href = path;
 
-  //  append css ny ke head tag
+  //  append css to head tag
   document.getElementsByTagName("head")[0].appendChild(css);
 };
 
-// load css from github
-
-loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/index.css");
+loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/index.css"); // load css from github
 
 // loadCSS("http://127.0.0.1:5500/src/css/index.css"); // local css from localhost
 
@@ -28,6 +26,7 @@ fetch(backgroundJson)
       return;
     }
 
+    // apply custom wallpaper
     addCustomCSS(`
     #theme-header {
     
