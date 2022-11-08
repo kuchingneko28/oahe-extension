@@ -10,9 +10,9 @@ const loadCSS = (path) => {
   document.getElementsByTagName("head")[0].appendChild(css);
 };
 
-// loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/index.css"); // load css from github
+loadCSS("https://kuchingneko28.github.io/oahe-extension/src/css/index.css"); // load css from github
 
-loadCSS("http://127.0.0.1:5500/src/css/index.css"); // local css from localhost
+// loadCSS("http://127.0.0.1:5500/src/css/index.css"); // local css from localhost
 
 // fetch background.json
 fetch(backgroundJson)
