@@ -19,20 +19,18 @@ fetch(backgroundJson)
   .then((response) => response.json())
   .then((data) => {
     const url_background = data.url;
-    const position_background = data.position !== null ? `background-position: ${data.position}` : "";
+    const position_background = data.position !== "" ? `background-position: ${data.position}` : "";
     const addCustomCSS = (css) => (document.head.appendChild(document.createElement("style")).innerHTML = css);
 
-    if (url_background == null) {
-      return;
+    if (url_background !== "") {
+      // apply custom wallpaper
+      addCustomCSS(`
+      #theme-header {
+        
+        background-image: url(${url_background});
+        ${position_background}
+        
+      }
+      `);
     }
-
-    // apply custom wallpaper
-    addCustomCSS(`
-    #theme-header {
-    
-    background-image: url(${url_background});
-    ${position_background}
-
-  }
-  `);
   });
