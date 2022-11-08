@@ -1,6 +1,6 @@
 # oahe-extension
 
-Cara ganti wallpaper gambar :
+Cara ganti gambar wallpaper:
 
 - Download extension & extract file nya
 - Edit file "background.json"
