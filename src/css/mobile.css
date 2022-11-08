@@ -26,7 +26,7 @@
   #theme-header {
     height: auto;
     overflow: hidden;
-    height: 349px;
+    height: 300px;
   }
   #sidebar {
     display: none;
@@ -62,7 +62,7 @@
     content: "";
     position: absolute;
     background: linear-gradient(180deg, rgba(38, 38, 38, 0) 50%, rgba(38, 38, 38, 1) 100%);
-
+    display: block;
     width: 100%;
     height: 100%;
   }
