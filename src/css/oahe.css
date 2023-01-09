@@ -482,11 +482,15 @@ body.dark-skin .box.shadow {
   box-shadow: none;
 }
 code a[style="color: #00e803;"],
-code span[style="color: #00e803;"] {
+code span[style="color: #00e803;"],
+code a[style="color: #005ef7;"],
+code span[style="color: #005ef7;"] {
   color: #38e54d !important;
 }
 code a[style="color: #00e803;"]:hover,
-code span[style="color: #00e803;"]:hover {
+code span[style="color: #00e803;"]:hover,
+code a[style="color: #005ef7;"]:hover,
+code span[style="color: #005ef7;"]:hover {
   color: #38e54d !important;
   opacity: 0.8;
 }
@@ -501,6 +505,9 @@ code span[style="color: #00e803;"]:hover {
 }
 .shortc-button.blue {
   background: #6e85b7 !important;
+}
+.shortc-button.orange {
+  background: #eec373 !important;
 }
 .shortc-button.white {
   background: #f3f1f5 !important;
