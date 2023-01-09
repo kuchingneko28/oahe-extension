@@ -1,3 +1,8 @@
+/* 
+* Custom CSS for Pahe.in
+* Create with ❤ by KuchingNeko
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 :root {
   --main-color: #171717;
@@ -5,7 +10,7 @@
   --third-color: #404040;
   --fourt-color: #a3a3a3;
   --white-color: #fff;
-  --border-radius: 8px;
+  --border-radius: 6px;
   --Poppins: "Poppins", sans-serif;
 }
 /* Basic CSS */
@@ -30,6 +35,26 @@ h6 {
 }
 a {
   text-decoration: none !important;
+}
+/* Make Scrollbar default  */
+/* width */
+::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--fourt-color) !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.7;
 }
 #wrapper.boxed-all {
   background-color: transparent;
@@ -56,6 +81,10 @@ h2.timeline-head {
      */
   padding-top: 60px;
 }
+.logo a {
+  z-index: 999;
+  position: relative;
+}
 .boxed-all {
   background-color: var(--second-color) !important;
 }
@@ -78,6 +107,12 @@ h2.timeline-head {
 #text-html-widget-18 a:nth-child(2):hover {
   opacity: 0.7;
 }
+.widget-container center a {
+  padding: 12px 25px;
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  float: left;
+}
 /* Top button */
 #topcontrol {
   background-color: var(--fourt-color) !important;
@@ -93,6 +128,9 @@ h2.timeline-head {
 .theiaStickySidebar select {
   border-radius: var(--border-radius);
 }
+.widget-container select {
+  font-family: var(--Poppins);
+}
 .widget-container .center a img {
   padding: 8px 20px;
   background: var(--white-color);
@@ -105,6 +143,12 @@ h2.timeline-head {
 .post-title {
   font-size: 25px;
   font-weight: 600 !important;
+}
+.imdbwp .imdbwp__title {
+  font-size: 23px;
+}
+.imdbwp .imdbwp__star {
+  font-family: var(--Poppins);
 }
 .widget-container .widget-top {
   background-color: var(--second-color) !important;
@@ -125,12 +169,7 @@ h2.timeline-head {
 .pane {
   border: none !important;
 }
-.imdbwp.dark {
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: var(--border-radius);
-  background: none !important;
-}
+
 .tabs a {
   background-color: var(--third-color) !important;
   color: var(---white-color) !important;
@@ -141,6 +180,9 @@ h2.timeline-head {
 #commentform {
   border-bottom: none !important;
   box-shadow: none !important;
+}
+.cat-box-content {
+  font-family: var(--Poppins);
 }
 .cat-box-content ul {
   display: grid;
@@ -188,16 +230,15 @@ a.more-link,
   padding: 6px 12px !important;
   border-radius: var(--border-radius) !important;
   text-align: center !important;
-  background-color: var(--main-color) !important;
+  background-color: var(--third-color) !important;
   color: var(---white-color) !important;
   font-family: "Poppins" !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 .submit {
   padding: 10px 20px !important;
   background-color: var(--third-color) !important;
   margin-top: 10px;
-  font-weight: 500 !important;
 }
 .imdbwp .imdbwp__img {
   margin-left: -20px;
@@ -207,10 +248,17 @@ a.more-link,
   max-width: 190px !important;
   flex: 1;
 }
+.imdbwp__content {
+  align-self: center;
+}
 .imdbwp.dark {
   display: flex;
-  /* flex-direction: column;
-     */
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: var(--border-radius);
+  background: none !important;
+  padding: unset;
+  margin-left: 20px;
   justify-content: space-between;
 }
 .imdbwp .imdbwp__content {
@@ -218,6 +266,9 @@ a.more-link,
   flex: 1;
 }
 /* Main & Navbar */
+#mobile-menu {
+  font-family: var(--Poppins);
+}
 #main-nav {
   margin: 0 auto;
   background: linear-gradient(180deg, rgba(38, 38, 38, 0) 0%, rgba(38, 38, 38, 1) 100%);
@@ -230,13 +281,14 @@ a.more-link,
 #main-nav ul li a,
 #main-nav ul li {
   border: none !important;
+  font-family: var(--Poppins);
 }
 #main-nav ul li.menu-item-home a {
   background-position: center 13px !important;
 }
 #main-nav ul li.current-menu-item a,
 #main-nav ul li.current-menu-item a:hover {
-  background-color: transparent;
+  background-color: transparent !important;
 }
 .search-block:after {
   display: none;
@@ -274,6 +326,10 @@ body.dark-skin #wrapper.boxed-all #theme-header {
   font-weight: 500;
   box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  font-family: var(--Poppins);
+}
+#menu-top li a {
+  font-family: var(--Poppins);
 }
 .tipsy-inner {
   background-color: var(--main-color);
@@ -333,21 +389,23 @@ body.dark-skin #wrapper.boxed-all #theme-header {
   height: 270px;
 }
 .cat-box .entry {
-  padding: 12px;
+  margin-top: -5px;
   border-radius: var(--border-radius);
 }
 
 .cat-box-content > .item-list .post-thumbnail img,
-.cat-box-content > .item-list .post-thumbnail a {
+.cat-box-content > .item-list .post-thumbnail a,
+.timeline-post .post-thumbnail img {
   border-radius: var(--border-radius) 0 0 8px;
   box-shadow: none !important;
+  object-fit: cover;
 }
 /* Pageination */
 .pagination span.current {
   background-color: var(--third-color) !important;
   border-radius: var(--border-radius);
   padding: 5px 10px;
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 /* Post date genre etc */
 .post-box-title {
@@ -379,10 +437,32 @@ p.post-meta a:hover {
 #commentform {
   background-color: var(--second-color) !important;
 }
+.post-inner {
+  padding: 10px;
+}
+.az-letters > ul.az-links > li {
+  width: 35px;
+  height: 35px;
+  border-radius: var(--border-radius);
+}
+.az-letters > ul.az-links > li a {
+  color: var(--second-color);
+}
+.az-letters > ul.az-links > li a:hover {
+  color: unset !important;
+}
+div.letter-section h2.letter-title {
+  border-bottom: 1px solid var(--fourt-color);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
 .post-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.post-navigation div {
+  font-size: 13px;
 }
 code {
   background-color: var(--third-color);
@@ -401,8 +481,37 @@ body.dark-skin .box.shadow {
   font-family: var(--Poppins);
   box-shadow: none;
 }
-.box.download a:hover {
-  color: unset;
+code a[style="color: #00e803;"],
+code span[style="color: #00e803;"] {
+  color: #38e54d !important;
+}
+code a[style="color: #00e803;"]:hover,
+code span[style="color: #00e803;"]:hover {
+  color: #38e54d !important;
+  opacity: 0.8;
+}
+.shortc-button.green {
+  background: #68a7ad !important;
+}
+.shortc-button.red {
+  background: #e97777 !important;
+}
+.shortc-button.purple {
+  background: #9a86a4 !important;
+}
+.shortc-button.blue {
+  background: #6e85b7 !important;
+}
+.shortc-button.white {
+  background: #f3f1f5 !important;
+}
+.box.download a[style="color: #d4af37 ;"],
+.box.download a[style="color: #d4af37 ;"]:hover {
+  color: #fed049 !important;
+}
+.box.download a[style="color: #00e803;"],
+.box.download a[style="color: #00e803;"]:hover {
+  color: #68b984 !important;
 }
 .yarpp-related a {
   font-weight: 600 !important;
@@ -444,6 +553,10 @@ body.dark-skin .box.shadow {
 #main-content {
   font-weight: 400;
   font-family: var(--Poppins);
+}
+#main-content .content {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 /* Border */
 .post-inner p.post-meta {
@@ -499,9 +612,18 @@ ul.authors-wrap li,
   padding: 8px 12px;
 }
 .pt-cv-title a {
-  letter-spacing: 0.5px;
   font-family: var(--Poppins);
+  font-weight: 500 !important;
 }
+.pt-cv-content-item {
+  text-align: center;
+}
+.pt-cv-wrapper img,
+.pt-cv-wrapper a {
+  border-radius: var(--border-radius);
+  object-fit: cover;
+}
+
 /* Comment */
 .comment-reply-link {
   margin: 12px;
