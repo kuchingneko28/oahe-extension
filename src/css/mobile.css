@@ -89,6 +89,9 @@
   .box div.box-inner-block {
     padding-left: 0px;
   }
+  .box.download {
+    margin-top: 15px;
+  }
   .box.download .tie-shortcode-boxicon:before {
     display: none;
   }

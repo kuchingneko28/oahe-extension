@@ -494,6 +494,9 @@ code span[style="color: #005ef7;"]:hover {
   color: #38e54d !important;
   opacity: 0.8;
 }
+.box.download span[style="color: #00ccff;"] {
+  color: #b9c0d5 !important;
+}
 .shortc-button.green {
   background: #68a7ad !important;
 }
@@ -512,6 +515,12 @@ code span[style="color: #005ef7;"]:hover {
 .shortc-button.white {
   background: #f3f1f5 !important;
 }
+.shortc-button.pink {
+  background: #ffb4ac !important;
+}
+.shortc-button.black {
+  background: #52575d !important;
+}
 .box.download a[style="color: #d4af37 ;"],
 .box.download a[style="color: #d4af37 ;"]:hover {
   color: #fed049 !important;
@@ -522,6 +531,12 @@ code span[style="color: #005ef7;"]:hover {
 }
 .yarpp-related a {
   font-weight: 600 !important;
+}
+.entry ol,
+.entry ul {
+  margin: unset;
+  padding-left: 10px;
+  padding-top: 5px;
 }
 .imdbwp.dark .imdbwp__header,
 .imdbwp.dark .imdbwp__teaser {
@@ -632,6 +647,14 @@ ul.authors-wrap li,
 }
 
 /* Comment */
+.commentmetadata a {
+  font-size: 10px;
+  font-weight: 600;
+}
+.block-head h3,
+#respond h3 {
+  font-size: 16px;
+}
 .comment-reply-link {
   margin: 12px;
   padding: 2px 12px;
@@ -652,7 +675,7 @@ ul.authors-wrap li,
   background: var(--third-color);
   margin: 8px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
 }
 input[type="text"],
 input[type="password"],
