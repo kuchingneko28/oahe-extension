@@ -55,6 +55,10 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+  .widget .post-thumbnail {
+    float: left !important;
+    margin-right: 10px !important;
+  }
   .cat-box-content ul .post-thumbnail {
     margin-bottom: unset !important;
   }
