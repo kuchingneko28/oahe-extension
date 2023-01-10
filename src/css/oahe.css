@@ -109,7 +109,7 @@ h2.timeline-head {
 #text-html-widget-18 a:nth-child(2):hover {
   opacity: 0.7;
 }
-.widget.widget_categories {
+.widget {
   padding: 5px 5px;
 }
 .widget-container center a {
@@ -315,11 +315,11 @@ a.more-link,
 }
 #theme-header {
   position: relative;
-  /* background-repeat: no-repeat; */
-  /* background-position: center center; */
-  /* background-image: url(""); */
-  /* background-size: cover; */
-  /* height: 351px; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("https://raw.githubusercontent.com/kuchingneko28/oahe-extension/main/tes.jpg");
+  background-size: cover;
+  height: 351px;
   border: none;
   object-fit: cover;
   margin: unset;
@@ -378,7 +378,7 @@ body.dark-skin #wrapper.boxed-all #theme-header {
   display: none;
 }
 .search-block .search-button {
-  background-color: var(--second-color);
+  background-color: var(--second-color) !important;
 }
 .search-block:after {
   border-right-color: var(--second-color);
@@ -402,7 +402,7 @@ body.dark-skin #wrapper.boxed-all #theme-header {
   height: 100%;
 }
 .header-content {
-  height: 180px;
+  height: 270px;
 }
 .cat-box .entry {
   margin-top: -5px;

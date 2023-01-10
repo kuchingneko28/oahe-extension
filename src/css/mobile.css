@@ -8,6 +8,9 @@
     height: 202px !important;
     margin: unset;
   }
+  .search-mobile button.search-button:hover {
+    color: var(---white-color) !important;
+  }
   .imdbwp .imdbwp__content {
     margin-top: 8px;
   }
