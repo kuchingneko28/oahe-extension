@@ -4,6 +4,10 @@
   }
 }
 @media screen and (max-width: 900px) {
+  #theme-header {
+    height: 202px !important;
+    margin: unset;
+  }
   .imdbwp .imdbwp__content {
     margin-top: 8px;
   }
@@ -44,7 +48,17 @@
     float: unset;
     padding: 20px;
   }
-
+  .post-thumbnail {
+    float: inherit !important;
+    margin-bottom: 20px !important;
+    text-align: center;
+  }
+  .cat-box-content > .item-list .post-thumbnail img {
+    border-radius: var(--border-radius);
+  }
+  .cat-box .entry a.more-link {
+    float: right;
+  }
   /* Grid view image center */
   .pt-cv-ifield {
     text-align: center;

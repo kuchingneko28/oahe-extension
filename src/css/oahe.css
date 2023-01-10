@@ -64,6 +64,7 @@ h2.timeline-head {
   background-color: var(--third-color) !important;
   color: var(--white-color) !important;
   border-radius: var(--border-radius);
+  font-size: 12px;
 }
 .timeline {
   border-color: var(--third-color) !important;
@@ -79,7 +80,8 @@ h2.timeline-head {
 .logo {
   /* text-align: right !important;
      */
-  padding-top: 60px;
+  padding-top: 40px;
+  margin: unset !important;
 }
 .logo a {
   z-index: 999;
@@ -106,6 +108,9 @@ h2.timeline-head {
 #text-html-widget-18 a:nth-child(1):hover,
 #text-html-widget-18 a:nth-child(2):hover {
   opacity: 0.7;
+}
+.widget.widget_categories {
+  padding: 5px 5px;
 }
 .widget-container center a {
   padding: 12px 25px;
@@ -181,6 +186,9 @@ h2.timeline-head {
   border-bottom: none !important;
   box-shadow: none !important;
 }
+.recent-box .cat-box-content {
+  padding: 0 5px;
+}
 .cat-box-content {
   font-family: var(--Poppins);
 }
@@ -192,6 +200,9 @@ h2.timeline-head {
 .cat-box-content ul li {
   box-shadow: none;
   border-radius: var(--border-radius);
+}
+.post-thumbnail img {
+  width: unset;
 }
 .post-thumbnail img.attachment-tie-small,
 .post-thumbnail img.avatar {
@@ -212,6 +223,9 @@ img.size-medium,
 .pic-box.cat-box li .post-thumbnail img.attachment-tie-small {
   box-shadow: none;
   object-fit: contain;
+}
+.pic-box.pic-grid .cat-box-content {
+  padding: unset;
 }
 .pic-box.pic-grid.cat-box li {
   width: auto;
@@ -301,13 +315,15 @@ a.more-link,
 }
 #theme-header {
   position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("https://kuchingneko28.github.io/oahe-extension/tes.jpg");
-  background-size: cover;
-  height: 351px;
+  /* background-repeat: no-repeat; */
+  /* background-position: center center; */
+  /* background-image: url(""); */
+  /* background-size: cover; */
+  /* height: 351px; */
   border: none;
   object-fit: cover;
+  margin: unset;
+  margin-bottom: 30px;
 }
 body.dark-skin #wrapper.boxed-all #theme-header {
   box-shadow: none;
@@ -386,7 +402,7 @@ body.dark-skin #wrapper.boxed-all #theme-header {
   height: 100%;
 }
 .header-content {
-  height: 270px;
+  height: 180px;
 }
 .cat-box .entry {
   margin-top: -5px;
@@ -438,7 +454,7 @@ p.post-meta a:hover {
   background-color: var(--second-color) !important;
 }
 .post-inner {
-  padding: 10px;
+  padding: unset;
 }
 .az-letters > ul.az-links > li {
   width: 35px;
@@ -532,8 +548,8 @@ code span[style="color: #005ef7;"]:hover {
 .yarpp-related a {
   font-weight: 600 !important;
 }
-.entry ol,
-.entry ul {
+.yarpp-related > ol,
+.yarpp-related > ul {
   margin: unset;
   padding-left: 10px;
   padding-top: 5px;
@@ -548,7 +564,7 @@ code span[style="color: #005ef7;"]:hover {
 }
 .post-tabs-ver ul.tabs-nav li.current,
 .post-tabs-ver ul.tabs-nav li:hover {
-  background-color: var(--third-color);
+  background-color: var(--third-color) !important;
   border-radius: var(--border-radius);
 }
 .post-tabs ul.tabs-nav li,
@@ -576,9 +592,11 @@ code span[style="color: #005ef7;"]:hover {
   font-weight: 400;
   font-family: var(--Poppins);
 }
+
 #main-content .content {
   padding-right: 10px;
   padding-left: 10px;
+  border-right: 1px solid var(--third-color);
 }
 /* Border */
 .post-inner p.post-meta {
@@ -700,7 +718,16 @@ textarea {
 }
 .stripe-line {
   filter: invert(100%);
-  margin-top: 10px;
+  margin-top: 7px;
+}
+#comments-box .post-listing {
+  padding: unset;
+}
+#commentform {
+  padding: unset;
+}
+.comment-notes {
+  margin: 10px 0 !important;
 }
 #commentform,
 #commentform label {
