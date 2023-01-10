@@ -52,6 +52,11 @@
     float: inherit !important;
     margin-bottom: 20px !important;
     text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .cat-box-content ul .post-thumbnail {
+    margin-bottom: unset !important;
   }
   .cat-box-content > .item-list .post-thumbnail img {
     border-radius: var(--border-radius);
